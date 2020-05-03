@@ -1,30 +1,22 @@
-import React,{useState, useEffect} from 'react';
+import React,{useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
 
-  const [numBusket, setNum] = useState('###')
-  const [trimmer, setTrim] = useState('###')
-  //const [busket] = useState(Number(numBusket.replace(/\(|\)|\+/g, '')))
+  const [numBusket, setNum] = useState('Вставляем номерок')
+  const [trimmer, setTrim] = useState('Жмем кнопочку..')
+  
   const handleChange = (event) => {
     setNum(event.target.value)
   }
-  // useEffect(() => {
-  //   console.log(numBusket);
-    
-    
-  // }, [numBusket]);
+  
 
   const trimHandler = (event) => {
    event.preventDefault()
-   const busket = Number(numBusket.replace(/\(|\)|\+|\ |\-/g, ''))
+   const busket = Number(numBusket.replace(/\(|\+|\ |\-|\)/g, ''))
     setTrim (busket)
-   //const trim = Number(busket.replace(/\(|\)|\+/g, ''))
-   
     console.log(trimmer)
-
-    
   }
 
 
@@ -37,13 +29,13 @@ function App() {
             <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
               Row number
             </label>
-            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Insert your garbage here" onChange={handleChange} />
+            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Вставляем номерок" onChange={handleChange} />
           </div>
           <div className="mb-6">
             <label className="block text-gray-700 text-sm font-bold mb-2" for="password">
               Perfect numbers
             </label>
-            <input className="shadow appearance-none border w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="text" placeholder={trimmer}  value={trimmer} />
+            <input className="shadow appearance-none border w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"  type="text" placeholder='Жмем кнопочку..'  value={trimmer} />
             <p className="text-gray-500 text-xs italic">Please release from all garbage..</p>
           </div>
           <div className="flex items-center justify-between">
