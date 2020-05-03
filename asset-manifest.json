@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/trimmer/static/css/main.07449a5d.chunk.css",
+    "main.js": "/trimmer/static/js/main.f3f9ed94.chunk.js",
+    "main.js.map": "/trimmer/static/js/main.f3f9ed94.chunk.js.map",
+    "runtime-main.js": "/trimmer/static/js/runtime-main.81fb30da.js",
+    "runtime-main.js.map": "/trimmer/static/js/runtime-main.81fb30da.js.map",
+    "static/js/2.091c58bc.chunk.js": "/trimmer/static/js/2.091c58bc.chunk.js",
+    "static/js/2.091c58bc.chunk.js.map": "/trimmer/static/js/2.091c58bc.chunk.js.map",
+    "index.html": "/trimmer/index.html",
+    "precache-manifest.9ac0481559970826280b7cf3e6e4b448.js": "/trimmer/precache-manifest.9ac0481559970826280b7cf3e6e4b448.js",
+    "service-worker.js": "/trimmer/service-worker.js",
+    "static/css/main.07449a5d.chunk.css.map": "/trimmer/static/css/main.07449a5d.chunk.css.map",
+    "static/js/2.091c58bc.chunk.js.LICENSE.txt": "/trimmer/static/js/2.091c58bc.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/trimmer/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.81fb30da.js",
+    "static/js/2.091c58bc.chunk.js",
+    "static/css/main.07449a5d.chunk.css",
+    "static/js/main.f3f9ed94.chunk.js"
+  ]
+}
